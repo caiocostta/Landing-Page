@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing Page</title>
+        <meta charset="UTF-8"/>
+        <link href="Assets/css/Style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, user-scalable=0" />
+
+        <script type="text/javascript">
+            window.onload = function(){
+                document.querySelector(".menuMobile").addEventListener("click", function(){
+                    if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                        document.querySelector(".menu nav ul").style.display = 'none';
+                    }else{
+                        document.querySelector(".menu nav ul").style.display = 'flex';
+                    }
+                });
+            };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                   <img src="assets/images/logo.png" />
+                    
+                </div>
+                <div class="menu">
+                    <nav>
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
+                        <ul>
+                            <li class="active"><a href="">Inicio</a></li>
+                            <li><a href="">MENU</a></li>
+                            <li><a href="">Sobre nos</a></li>
+                            <li><a href="">Contatos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section id="banner">
+            <div class="container column">
+                <h1>Sweets by Telma</h1>
+                <h2>Doces feitos com amor</h2>
+                <form class="widget_form">
+                    <label for="email_banner">Inscreva-se para receber notificações de descontos exclusivos por e-mail!</label> <br/>
+                    <input required id="email_banner" type="email" name="email_banner" placeholder="Digite seu e-mail aqui"/>
+                    <input name="submit" type="submit" value="Inscreva-se" class="submit" />
+                </form>
+            </div>
+        </section>
+        <section id="menu" class="column">
+            <div class="container column">
+                    <h1>Doces feito com muito amor</h1>
+                    <h2>Dê uma olhada</h2>
+                    <hr class="line_title">
+            </div>
+            <div class="container space">
+                <figure class="photo_menu">
+                    <img src="assets/images/Chocolates Coração.jpeg"/>
+                    <div class="photo_title">Corações Recheados</div>
+                    <div class="photo_subtitle">Feitos a mão, entregues com amor</div>
+                    <a href="https://www.instagram.com/p/CbBYzrEJwRZ/"><input class="view_button" type="button" name="view_button" value="Veja aqui"/></a>
+                </figure>
+                <figure class="photo_menu">
+                    <img src="assets/images/Ovo Colher.jpeg"/>
+                    <div class="photo_title">Ovos de Colher</div>
+                    <div class="photo_subtitle">Feitos a mão, entregues com amor</div>
+                    <a href="https://www.instagram.com/p/CbBaGUQJeHD/"><input class="view_button" type="button" name="view_button" value="Veja aqui"/></a>
+                </figure>
+                <figure class="photo_menu">
+                    <img src="assets/images/Ovo Coração.jpeg"/>
+                    <div class="photo_title">Ovos de coração</div>
+                    <div class="photo_subtitle">Feitos a mão, entregues com amor</div>
+                    <a href="https://www.instagram.com/p/CbBY5vtp-Cm/"><input class="view_button" type="button" name="view_button" value="Veja aqui"/></a>
+                </figure>
+            </div>           
+        </section>
+        <section id="contact" class="column">
+            <div class="container column">
+                <h1>Deseja enviar uma mensagem?</h1>
+                <h2>Ficaremos feliz em te atender</h2>
+                <hr class="line_title">
+            </div>
+            <div class="container">
+                <form id="form" method="post">
+                    <label>Nome</label><br/>
+                    <input class="text" placeholder="Nome Completo" name="name" type="text"/><br/>
+                    <label>E-mail</label><br/>
+                    <input class="text" placeholder="E-mail" name="email" type="email"/><br/>
+                    <label>Telefone</label><br/>
+                    <input class="text" placeholder="Seu número de telefone" name="tel" type="tel"/><br/>
+                    <label>Mensagem</label><br/>
+                    <textarea class="text rows" placeholder="Digite sua mensagem para nós" name="msg" rows="15" cols="30"></textarea><br/>
+                    <input class="submit" name="submit" type="submit" value="Enviar"/>
+                </form>
+                <figure style="margin: 0;">
+                    <img src="assets/images/ouvidoria_pag.png"/>
+                </figure>
+            </div>
+        </section>
+        <footer>
+            <div class="container column">
+                <div class="social_media">
+                    <h1>Redes Sociais</h1>
+                    <div class="figure_footer">
+                        <figure><img src="assets/images/facebook.png"/></figure>
+                        <figure><a href="https://www.instagram.com/sweetsbytelma/"><img src="assets/images/instagram.png"/></a></figure>
+                        <figure><img src="assets/images/twitter.png"/></figure>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p>&copy; Caio Costa</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
